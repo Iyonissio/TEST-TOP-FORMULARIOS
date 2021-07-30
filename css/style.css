@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+    list-style: none;
+}
+
+body {
+    background: white; 
+}
+
+.info-inicial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 178px;
+    padding-right: 178px;
+    gap: 20px;
+    margin-top: 128px;
+}
+
+.footer-saida {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 178px;
+    padding-right: 178px;
+    gap: 20px;
+    margin-top: 128px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info p{
+  padding-top: 10px;  
+}
+.data-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-saida .info-footer p{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-info-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-saida .data-info-footer p{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.organizacao {
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-weight: bold;
+}
+.gg {
+    width: 80px;
+    background-color: lavenderblush;
+}
+.ggg {
+    width: 524px;
+    background-color: lavenderblush;
+}
+
+
+/*Pagina A4 Propriedades
+
+*/

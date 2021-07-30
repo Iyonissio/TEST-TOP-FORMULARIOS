@@ -1,0 +1,72 @@
+.topo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-left: 178px;
+    padding-right: 178px;
+    gap: 20px;
+    margin-top: 128px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo .endereco p{
+
+}
+
+.logo img {
+    width: 200px;
+    height: 160px;
+}
+
+.info-topo {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-topo p{
+    display: flex;
+    justify-content:center;
+    padding-right: 100px;
+    font-weight: bold;
+}
+
+
+/*Tabela*/
+
+.organizacao {
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Parte final */
+.info-final {
+    display: flex;
+    flex-direction: column;
+    padding-top: 68px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.info-final .descricao .titulo h1{
+    font-size: 22px;
+}
+.info-final .descricao h3{
+    font-size: 14px;
+}
+
+span {
+    font-weight: bold;
+}
+.gg {
+    width: 90px;
+    background-color: lavenderblush;
+}
+.ggg {
+    width: 324px;
+    background-color: lavenderblush;
+}
