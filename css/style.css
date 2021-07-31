@@ -10,13 +10,33 @@ body {
     background: white; 
 }
 
-.intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-top: 38px;
-    padding-left: 16px;
-    padding-right: 16px; 
+
+.page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
+
+.page[size="A4"] {  
+    width: 21cm;
+    height: 29.7cm; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+  
+@media print {
+  body, .page {
+    margin: 0;
+    box-shadow: 0;
+   }
+}
+/*A4 ACIMA*/
 
 .info-inicial {
     display: grid;

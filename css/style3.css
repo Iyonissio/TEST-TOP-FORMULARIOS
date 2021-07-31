@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+    list-style: none;
+}
+
+body {
+    background: white; 
+}
+
+.intro-topo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 38px;
+    padding-left: 16px;
+    padding-right: 16px; 
+}
+
+
+.organizacao {
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-weight: bold;
+}
+.gg {
+    width: 80px;
+}
+
+.ggg {
+    width: 524px;
+}
+
+
+/*Pagina A4 Propriedades
+
+*/
