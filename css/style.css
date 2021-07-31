@@ -52,8 +52,10 @@ body {
     grid-template-columns: 1fr 1fr;
     padding-left: 178px;
     padding-right: 178px;
+    padding-top: 30px;
+    justify-content: center;
+    text-align: center;
     gap: 20px;
-    margin-top: 128px;
 }
 
 .info {
@@ -64,40 +66,10 @@ body {
 .info p{
   padding-top: 10px;  
 }
-.data-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.info-footer {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-saida .info-footer p{
-    display: flex;
-    padding-top: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.data-info-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.footer-saida .data-info-footer p{
-    display: flex;
-    padding-top: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
+    
 .organizacao {
     display: flex;
-    padding-top: 50px;
+    padding-top: 20px;
     align-items: center;
     justify-content: center;
 }
