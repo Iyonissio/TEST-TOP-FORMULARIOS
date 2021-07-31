@@ -23,7 +23,7 @@
       grid-column-gap: 10px;
       grid-template-columns: auto auto auto auto;
       padding-left: 150px;
-      padding-right: 150px;
+      padding-right: 170px;
       padding-top: 100px;
     }
 
@@ -63,6 +63,13 @@
         padding-right: 8px;
       }
     }
+
+    @media print {
+      .info-inicial {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+    }
   </style>
 
   <body>
@@ -86,7 +93,7 @@
           <p>E-mail: producao@testop.co.mz</p>
         </div>
         <div class="grid-item">
-          <h1 style="color: red">No. 001288</h1>
+          <h1 style="color: red">No. 000659</h1>
           <p></p>
           <h1>GUIA DE ENTRADA DE MATERIAL</h1>
         </div>
@@ -163,40 +170,23 @@
             <td>Griffin</td>
             <td>Peter</td>
           </tr>
-          <tr>
-            <td>Peter</td>
-            <td>Griffin</td>
-            <td>Peter</td>
-            <td>Griffin</td>
-            <td>Peter</td>
-            <td>Griffin</td>
-            <td>Peter</td>
-          </tr>
-
-          
         </table>
       </div>
 
-
-      
-
-      <div class="footer-saida">
-        <div class="info-footer">
-          <p><span>Fornecido em: 12/03/2021</span></p>
-          <p style="text-decoration: underline;">Iyonissio daniel Sitoe</p>
+      <div class="footer-fim">
+        <div class="footer-detalhes">
+          <p style="text-decoration: underline">Iyonissio daniel Sitoe</p>
           <p>(Fiel do Armazem)</p>
-          <p style="text-decoration: underline;">Filipe Manuel</p>
+        </div>
+        <div class="footer-detalhes">
+          <p style="text-decoration: underline">Filipe Manuel</p>
           <p>(Assistente do Armazem)</p>
         </div>
-        <div class="info-footer">
-          <p><span>Recebido em: 05/03/2021</span></p>
-          <p style="text-decoration: underline;">Iyonissio Sitoe</p>
-          <p>(Levantado por)</p>
-          <p style="text-decoration: underline;">Manuel Monjane</p>
+        <div class="footer-detalhes">
+          <p style="text-decoration: underline">Manuel Monjane</p>
           <p>(Procurement)</p>
         </div>
       </div>
-
     </page>
   </body>
 </html>
