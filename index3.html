@@ -1,84 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Requisicao ao Armazem</title>
     <link rel="stylesheet" href="css/style3.css" />
 
     <style>
-        table {
-            border-collapse: collapse;
-        }
-        
-        table, td, th {
-            border: 2px solid black;
-        }
+      table {
+        border-collapse: collapse;
+      }
+
+      table,
+      td,
+      th {
+        border: 2px solid black;
+      }
+
+      @page { 
+        size: auto;  
+        margin: 0mm; 
+      }
+
+      @media print {
+      .title {
+        display: none;
+      }
+      .grid-container {
+        padding-left: 20px;
+        padding-top: 30px;
+        padding-right: 20px;
+      }
+      .grid-container-topo {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .datas {
+        grid-column-gap: 370px;
+      } 
+      .organizacao{
+        padding-left: 20px;
+        padding-right: 55px;
+      } 
+      .grid-container-meio-tabela{
+        padding-left: 20px;
+        padding-right: 55px;
+      }
+}
     </style>
-</head>
-
-
-    <div class="intro-topo">
-        <table>
-            <tr>
-              <th class="gg">
-                <div class="logo-topo">
-                    <img src="image/testtop.PNG" alt="foto" />
+  </head>
+  <body>
+    <page size="A4">
+      <div class="grid-container-topo">
+          <table>
+            <th>
+              <div class="requisitante-topo">
+                <div class="requisitante-detalhes-topo">
+                  <img src="image/testtop.PNG" alt="foto" />
                 </div>
-                <div class="info-topo">
-                    <h2>TES-TOP, LDA</h2>
-                    <p>FORCA E DESENVOLVIMENTO</p>
-                    <P>MATERIAL ELECTRICO | HIDRAULICO | ELECTRIFICACAO</P>
+                <div class="requisitante-detalhes-topo">
+                  <h2>TES-TOP, LDA</h2>
+                  <p>FORCA E DESENVOLVIMENTO</p>
+                  <P>MATERIAL ELECTRICO | HIDRAULICO | ELECTRIFICACAO</P>
                 </div>
-              </th>
-              <th class="gg">
-                  <div class="requisicao">
-                    <h2>REQUISICAO AO ARMAZEM </h2>
-                    <h2>No. 003651</h2>
-                  </div>
-              </th>
-            </tr>  
-        </table>
-    </div>
+              </div>
+          </th>
+          <th>
+            <div class="grid-item-topo">
+              <h2>REQUISICAO AO ARMAZEM </h2>
+              <h2 style="color: red;">No. 003651</h2>
+            </div>
+          </th>
+          </table>
+      </div>
 
-<body>
-    <div class="organizacao">
-        <table>
-            <tr>
-              <th class="gg">QUANT</th>
-              <th class="gg">UN.</th>
-              <th class="ggg">DESCRICAO</th>
-              <th class="gg">OBS.</th>
-            </tr>
-            <tr>
-                <td>Peter</td>
-                <td>Griffin</td>
-                <td>Peter</td>
-                <td>Griffin</td>
-              </tr>
-              <tr>
-                <td>Peter</td>
-                <td>Griffin</td>
-                <td>Peter</td>
-                <td>Griffin</td>
-              </tr>
-              <tr>
-                <td>Peter</td>
-                <td>Griffin</td>
-                <td>Peter</td>
-                <td>Griffin</td>
-              </tr>
-              <tr>
-                <td>Peter</td>
-                <td>Griffin</td>
-                <td>Peter</td>
-                <td>Griffin</td>
-              </tr>
-              
-        </table>
-    </div>
+      <div class="datas">
+        <div class="datas-detalhes">
+          <p>Data: 16/06/2021</p>
+          <p>Hora: 12:00 h</p>
+        </div>
+        <div class="datas-detalhes">
+          <p>REQ. No:_____________</p>
+        </div>
+      </div>
+      
 
+
+      <div class="grid-container-meio-tabela">
+          <table>
+            <th>
+              <div class="requisitante">
+                <div class="requisitante-detalhes">
+                  <p>REQUISITANTE: DEP. PROCUREMENT</p>
+                </div>
+                <div class="requisitante-detalhes">
+                  <p>APLICACAO: PROJECTO LEV</p>
+                </div>
+              </div>
+              <div class="requisitante">
+                <div class="requisitante-detalhes">
+                  <p >MOTIVACAO DA REQUISICAO:</p>
+                </div>
+              </div>
+              <div class="requisitante2">
+                <div class="requisitante-detalhes2">
+                  <p>AVARIA/REPARACAO
+                    <input id="teste1" type="checkbox">
+                  </p>
+                </div>
+                <div class="requisitante-detalhes2">
+                  <p>MANUNTENCAO
+                    <input id="teste1" type="checkbox">
+                  </p>
+                </div>
+                <div class="requisitante-detalhes2">
+                  <p>OUTROS
+                    <input id="teste1" type="checkbox">
+                  </p>
+                </div>
+              </div>
+            </th>
+          </table>
+      </div>
+
+
+
+      <div class="organizacao">
+        <table >
+          <tr>
+            <th class="gg">QUANT</th>
+            <th class="gg">UN.</th>
+            <th class="ggg">DESCRICAO</th>
+            <th class="gg">OBS.</th>
+          </tr>
+          <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>Peter</td>
+            <td>Griffin</td>
+          </tr>
+          <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>Peter</td>
+            <td>Griffin</td>
+          </tr>
+          <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>Peter</td>
+            <td>Griffin</td>
+          </tr>
+          <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>Peter</td>
+            <td>Griffin</td>
+          </tr>
+        </table>
+      </div>
     
-</body>
+
+      <div class="grid-container">
+        <div class="grid-item">
+          <p>ELABORADO POR:</p>
+          <p></p>
+          <p style="text-decoration: underline">Iyonissio</p>
+        </div>
+        <div class="grid-item">
+          <p>AUTORIZADO POR:</p>
+          <p></p>
+          <p style="text-decoration: underline">Iyonissio</p>
+        </div>
+        <div class="grid-item">
+          <p>ENTREGUE POR:</p>
+          <p></p>
+          <p style="text-decoration: underline">Iyonissio</p>
+        </div>
+        <div class="grid-item">
+          <p>LEVANTADO POR:</p>
+          <p></p>
+          <p style="text-decoration: underline">Iyonissio</p>
+      </div>
+    </page>
+  </body>
 </html>
