@@ -129,8 +129,8 @@ body {
 .organizacao {
   display: flex;
   padding-top: 50px;
-  align-items: center;
-  justify-content: center;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 span {
@@ -138,6 +138,10 @@ span {
 }
 .gg {
   width: 80px;
+}
+
+.obs{
+  width: 254px;  
 }
 
 .ggg {

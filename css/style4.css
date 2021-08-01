@@ -17,29 +17,22 @@
   text-align: center;
 }
 
-@media print {
-  body,
-  .page {
-    margin: 0;
-    box-shadow: 0;
-  }
-}
 
 
 /*Tabela*/
 
 .organizacao {
   display: flex;
-  padding-top: 50px;
-  align-items: center;
-  justify-content: center;
+  padding-top: 20px;
+  padding-left: 270px;
+  padding-right: 260px;
 }
 
 /*Parte final */
 .info-final {
   display: flex;
   flex-direction: column;
-  padding-top: 68px;
+  padding-top: 28px;
   padding-left: 210px;
   padding-right: 12px;
 }
@@ -65,13 +58,28 @@ span {
 
 .grid-container {
     display: grid;
-    grid-column-gap: 10px;
+    grid-column-gap: 70px;
     grid-template-columns: auto auto;
     justify-content: center;
     align-items: center;
 }
   
-.grid-item {
-    font-size: 30px;
-    text-align: center;
+.grid-container .grid-item p{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 8px;
 }
+
+@media print {
+  body,
+  .page {
+    margin: 0;
+    box-shadow: 0;
+  }
+  .organizacao {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
